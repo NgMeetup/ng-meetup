@@ -1,0 +1,16 @@
+.toggle {
+  input:checked + .track {
+    border-color: $primary;
+    background-color: $primary;
+  }
+}
+
+.toggle-small {
+  input:checked + .track .handle {
+    background: $secondary;
+  }
+}
+
+.item{
+  border-color: rgba(0, 0, 0, 0.05);
+}

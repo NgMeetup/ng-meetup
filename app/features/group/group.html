@@ -1,0 +1,14 @@
+<ion-content class="has-header group-view container" system-tab>
+    <div class="group-header">
+        <div class="text-center logo-group">
+            <img ng-src="{{group.group_photo.photo_link}}">
+        </div>
+        <h2>{{group.name}}</h2>
+
+        <div class="text-right">
+            <span class="label label-warning"><i class="ion-android-star"></i> {{group.rating}}</span>
+            <span class="label label-primary">{{group.city}}</span>
+        </div>
+    </div>
+    <p class="text-justify" ng-bind-html="group.description"></p>
+</ion-content>

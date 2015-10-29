@@ -1,0 +1,201 @@
+header {
+  height: 44px;
+}
+header ion-header-bar.bar.bar-positive {
+  background: #F26629;
+  border: none !important;
+}
+header ion-header-bar.bar.bar-positive button.button.button-icon:before {
+  font-size: 20px;
+  padding-right: 8px;
+}
+header ion-header-bar.bar.bar-positive .title.full-size {
+  left: 0 !important;
+  right: 0 !important;
+}
+
+ion-tabs.tabs-icon-left.tabs-top .tabs {
+  background: #F26629;
+  border: none;
+}
+ion-tabs.tabs-icon-left.tabs-top .tabs .tab-item {
+  font-size: 14px;
+}
+ion-tabs.tabs-icon-left.tabs-top .tabs .tab-item.tab-item-active {
+  border-width: 0 0 3px !important;
+}
+ion-tabs.tabs-icon-left.tabs-top .tabs .tab-item:active, ion-tabs.tabs-icon-left.tabs-top .tabs .tab-item:focus, ion-tabs.tabs-icon-left.tabs-top .tabs .tab-item:hover {
+  text-decoration: none;
+}
+ion-tabs.tabs-icon-left.tabs-top .tabs .tab-item i.icon {
+  display: none;
+}
+ion-tabs.tabs-icon-only .tabs {
+  background: #F26629;
+}
+ion-tabs .tab-item i.icon:hover, ion-tabs .tab-item i.icon:active, ion-tabs .tab-item i.icon:focus {
+  color: rgba(255, 255, 255, 0.7);
+}
+ion-tabs .tabs {
+  background-color: #F26629 !important;
+  border: none !important;
+}
+
+.platform-android .event-list-view {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+.platform-android .event-list-view .item.item-complex {
+  border: none;
+  margin: 10px;
+  box-shadow: 0 7px 7px -6px rgba(0, 0, 0, 0.1);
+}
+
+.event-list-view .item.item-complex {
+  padding: 0;
+  border-color: rgba(0, 0, 0, 0.05);
+}
+.event-list-view .item.item-complex.upcoming-item a {
+  padding: 15px 65px 15px 15px;
+}
+.event-list-view .item.item-complex.upcoming-item a .badge.badge-assertive {
+  margin-right: -20px;
+  margin-top: -3px;
+  background: #EB4F26;
+}
+.event-list-view .item.item-complex.upcoming-item a .badge.badge-assertive i {
+  margin-right: 4px;
+  font-size: 18px;
+  margin-top: -2px;
+}
+.event-list-view .item.item-complex a {
+  padding: 15px;
+}
+.event-list-view .item.item-complex a.activated {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.event-view h2 {
+  font-size: 20px;
+  font-weight: 300;
+  margin: 10px 0;
+  color: #333;
+}
+.event-view .call-events {
+  padding: 0;
+  margin: 20px 0;
+  text-align: center;
+}
+.event-view .call-events .star-event {
+  border-color: #ECC31F;
+  color: #FFBC2F;
+}
+.event-view .call-events .btn.calendar-event {
+  font-size: 16px;
+  color: #565656;
+  border-color: #565656;
+  padding: 2px 10px 0px;
+  vertical-align: middle;
+}
+.event-view .call-events .btn.calendar-event i {
+  font-size: 25px;
+  vertical-align: top;
+  top: 3px;
+  position: relative;
+}
+.event-view .call-events .people-event {
+  border-color: #F26629;
+  color: #F26629;
+}
+.event-view .call-events .btn.map-event {
+  border-color: #45d55b;
+  background: #45d55b;
+  color: white;
+  text-transform: capitalize;
+}
+.event-view .call-events .btn {
+  margin: 0 5px;
+  background-color: transparent;
+}
+.event-view .call-events .btn i {
+  font-size: 16px;
+}
+.event-view .event-description {
+  letter-spacing: 0.5px;
+  text-align: justify;
+  color: #333;
+}
+.event-view .event-description img {
+  max-width: calc(100% + 30px);
+  margin: 10px -15px;
+}
+.event-view .event-description a {
+  color: #EB4F26;
+  text-decoration: none;
+}
+
+.group-view .group-header {
+  margin-bottom: 20px;
+}
+.group-view .group-header h2 {
+  text-align: center;
+  color: #F26629;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  font-size: 24px;
+}
+.group-view .group-header .logo-group {
+  padding: 20px 15% 0;
+}
+.group-view .group-header .logo-group img {
+  width: 100%;
+  max-width: 280px;
+}
+
+.toggle input:checked + .track {
+  border-color: #F26629;
+  background-color: #F26629;
+}
+
+.toggle-small input:checked + .track .handle {
+  background: #EB4F26;
+}
+
+.item {
+  border-color: rgba(0, 0, 0, 0.05);
+}
+
+html {
+  height: 100%;
+}
+
+body .item.item-divider {
+  background-color: #EB4F26;
+  color: white;
+  border: none;
+}
+
+.platform-android .hidden-android {
+  display: none;
+}
+
+.platform-ios .hidden-ios {
+  display: none;
+}
+
+.has-tabs.pane {
+  bottom: 93px;
+  height: auto;
+}
+
+.has-tabs-top.pane {
+  top: 48px;
+  height: calc(100% - 93px);
+}
+
+.platform-ios.platform-cordova:not(.fullscreen) .bar-header:not(.bar-subheader) > * {
+  margin-top: 0 !important;
+}
+
+.platform-ios.platform-cordova:not(.fullscreen) .bar-header:not(.bar-subheader) {
+  height: 44px;
+}

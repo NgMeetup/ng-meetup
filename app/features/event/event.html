@@ -1,0 +1,28 @@
+<ion-content class="has-header event-view" system-tab>
+    <map zoom="17" center="{{::event.venue.lat}},{{::event.venue.lon}}" ng-if="event.venue"
+         draggable="false" disable-default-u-i="true"
+         disable-double-click-zoom="true" max-zoom="22" min-zoom="15">
+        <marker position="{{::event.venue.lat}},{{::event.venue.lon}}" title="{{::event.venue.name}}"
+                icon="{{::mapIcon}}"></marker>
+    </map>
+    <div class="container">
+        <h2>{{::event.name}}</h2>
+
+        <div class="col-md-12 call-events" ng-if="event.time">
+            <span class="btn btn-warning calendar-event"><i
+                    class="ion-ios-calendar-outline"></i> {{::event.time | date: 'dd / MMM / yyyy - HH:mm'}}</span>
+        </div>
+
+        <div class="col-md-12 call-events">
+            <span class="btn btn-warning star-event" ng-if="event.rating"><i
+                    class="ion-ios-star"></i> {{::float(event.rating.average)}} </span>
+            <span class="btn btn-warning people-event"><i
+                    class="ion-ios-person"></i> {{::event.yes_rsvp_count}} </span>
+            <button ng-if="event.venue" ng-click="openMap(event)" class="btn btn-warning map-event"><i
+                    class="ion-ios-location"></i> Directions
+            </button>
+        </div>
+
+        <div class="event-description" ng-bind-html="::event.description"></div>
+    </div>
+</ion-content>

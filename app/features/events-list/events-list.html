@@ -1,0 +1,28 @@
+<ion-content class="has-header event-list-view" system-tab>
+    <ion-refresher
+            pulling-text="Pull to refresh..."
+            on-refresh="refreshEvents()">
+    </ion-refresher>
+    <ion-list>
+        <div class="item item-divider">
+            Upcoming events
+        </div>
+        <ion-item ng-repeat="event in upcoming" class="upcoming-item" ui-sref="event({event_id:event.id})">
+            {{::event.name}}
+            <span class="badge badge-assertive"><i class="icon ion-ios-person"></i> {{event.yes_rsvp_count}}</span>
+        </ion-item>
+        <ion-item ng-if="!upcoming.length" class="upcoming-item" ui-sref="event({event_id:event.id})">
+            No upcoming events
+        </ion-item>
+
+        <div class="item item-divider">
+            Past events
+        </div>
+        <ion-item ng-repeat="event in past" ui-sref="event({event_id:event.id})">
+            {{::event.name}}
+        </ion-item>
+        <ion-item ng-if="!past.length" class="upcoming-item" ui-sref="event({event_id:event.id})">
+            No past events
+        </ion-item>
+    </ion-list>
+</ion-content>

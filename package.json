@@ -1,0 +1,13 @@
+{
+  "name": "ngMeetup",
+  "version": "1.0.0",
+  "description": "Create your own Meetup groups app!",
+  "dependencies": {
+    "gulp": "^3.9.0",
+    "del": "^2.0.2",
+    "gulp-bower": "0.0.10",
+    "gulp-compass": "^2.1.0",
+    "gulp-connect": "^2.2.0",
+    "gulp-shell": "^0.5.1"
+  }
+}

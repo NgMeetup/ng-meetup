@@ -1,0 +1,38 @@
+.platform-android {
+  .event-list-view {
+    background-color: rgba(black, 0.05);
+    .item.item-complex {
+      border: none;
+      margin: 10px;
+      box-shadow: 0 7px 7px -6px rgba(0, 0, 0, 0.1);
+    }
+  }
+}
+
+.event-list-view {
+  .item.item-complex {
+    padding: 0;
+    border-color: rgba(0, 0, 0, 0.05);
+    &.upcoming-item {
+      a {
+        padding: 15px 65px 15px 15px;
+        .badge.badge-assertive{
+          margin-right: -20px;
+          margin-top: -3px;
+          background: $secondary;
+          i{
+            margin-right: 4px;
+            font-size: 18px;
+            margin-top: -2px;
+          }
+        }
+      }
+    }
+    a {
+      padding: 15px;
+      &.activated {
+        background: rgba(black, 0.1);
+      }
+    }
+  }
+}

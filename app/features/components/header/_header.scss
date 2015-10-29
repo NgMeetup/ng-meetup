@@ -1,0 +1,17 @@
+header {
+  height: 44px;
+  ion-header-bar.bar.bar-positive {
+    background: $primary;
+    border: none !important;
+    button.button.button-icon {
+      &:before {
+        font-size: 20px;
+        padding-right: 8px;
+      }
+    }
+    .title.full-size {
+      left: 0 !important;
+      right: 0 !important;
+    }
+  }
+}

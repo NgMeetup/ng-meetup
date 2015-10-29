@@ -1,0 +1,55 @@
+$primary: #F26629;
+$secondary: #EB4F26;
+
+$gray: #777;
+$gray_dark: #333;
+$gray_light: #DDD;
+
+@import '../../features/components/header/_header';
+@import '../../features/components/tabs/_tabs';
+
+@import '../../features/events-list/_events-list';
+@import '../../features/event/_event';
+@import '../../features/group/_group';
+@import '../../features/settings/settings';
+@import '../../features/legal/legal';
+
+html {
+  height: 100%;
+}
+
+body {
+  .item.item-divider {
+    background-color: $secondary;
+    color: white;
+    border: none;
+  }
+}
+
+.platform-android {
+  .hidden-android {
+    display: none;
+  }
+}
+
+.platform-ios {
+  .hidden-ios {
+    display: none;
+  }
+}
+
+.has-tabs.pane {
+  bottom: 93px;
+  height: auto;
+}
+.has-tabs-top.pane {
+  top: 48px;
+  height: calc(100% - 93px);
+}
+
+.platform-ios.platform-cordova:not(.fullscreen) .bar-header:not(.bar-subheader)>* {
+  margin-top: 0 !important;
+}
+.platform-ios.platform-cordova:not(.fullscreen) .bar-header:not(.bar-subheader) {
+  height: 44px
+}

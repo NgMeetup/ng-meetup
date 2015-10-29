@@ -1,0 +1,4 @@
+cordova plugin add https://github.com/phonegap-build/PushPlugin.git
+cordova plugin add cordova-plugin-whitelist@1.0.0
+cordova plugin add org.apache.cordova.statusbar@0.1.10
+cordova plugin add cordova-plugin-inappbrowser@0.6.0

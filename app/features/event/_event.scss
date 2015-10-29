@@ -1,0 +1,61 @@
+.event-view {
+  h2 {
+    font-size: 20px;
+    font-weight: 300;
+    margin: 10px 0;
+    color: $gray_dark;
+  }
+  .call-events {
+    padding: 0;
+    margin: 20px 0;
+    text-align: center;
+    .star-event {
+      border-color: #ECC31F;
+      color: #FFBC2F;
+    }
+    .btn.calendar-event{
+      font-size: 16px;
+      color: #565656;
+      border-color: #565656;
+      padding: 2px 10px 0px;
+      vertical-align: middle;
+      i{
+        font-size: 25px;
+        vertical-align: top;
+        top: 3px;
+        position: relative;
+      }
+    }
+    .people-event {
+      border-color: $primary;
+      color: $primary;
+    }
+    .btn.map-event {
+      border-color: #45d55b;
+      background: #45d55b;
+      color: white;
+      text-transform: capitalize;
+    }
+
+    .btn {
+      margin: 0 5px;
+      background-color: transparent;
+      i {
+        font-size: 16px;
+      }
+    }
+  }
+  .event-description {
+    letter-spacing: 0.5px;
+    text-align: justify;
+    color: $gray_dark;
+    img {
+      max-width: calc(100% + 30px);
+      margin: 10px -15px;
+    }
+    a {
+      color: $secondary;
+      text-decoration: none;
+    }
+  }
+}

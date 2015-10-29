@@ -1,0 +1,14 @@
+.sass-cache
+**/.idea/workspace.xml
+**/.idea/
+node_modules
+bower_components
+cordova/www
+!info.plist
+!config.xml
+cordova/platforms
+cordova/plugins
+cordova/resources/*
+!cordova/resources/*.png
+cordova/hooks
+temp

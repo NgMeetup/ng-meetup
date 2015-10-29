@@ -1,0 +1,14 @@
+{
+  "name": "ngMeetup",
+  "description": "Create your own Meetup groups app!",
+  "version": "1.0.0",
+  "homepage": "https://github.com/angular/angular-seed",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "ngCordova": "0.1.20-alpha",
+    "bootstrap": "~3.3.5",
+    "ngmap": "^1.13.4",
+    "ngstorage" : "0.3.9"
+  }
+}

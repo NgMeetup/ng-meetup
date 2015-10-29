@@ -1,0 +1,39 @@
+ion-tabs {
+  &.tabs-icon-left.tabs-top {
+    .tabs {
+      background: $primary;
+      border: none;
+      .tab-item {
+        &.tab-item-active {
+          border-width: 0 0 3px !important;
+        }
+        &:active, &:focus, &:hover {
+          text-decoration: none;
+        }
+        font-size: 14px;
+        i.icon {
+          display: none;
+        }
+      }
+    }
+  }
+
+  &.tabs-icon-only {
+    .tabs {
+      background: $primary;
+    }
+  }
+
+  .tab-item {
+    i.icon {
+      &:hover, &:active, &:focus {
+        color: rgba(white, 0.7);
+      }
+    }
+  }
+  .tabs {
+    background-color: $primary !important;
+    border: none !important;
+  }
+}
+
