@@ -14,6 +14,7 @@ The app is able to show some information from a meetup such as:
 
 It also includes a small wrapper of the Meetup API so you don't have to deal with the backend if you don't want to. This backend is build with NodeJS and you can found it here: [ng-meetup/ng-meetup-backend]
 
+## DEMO APK
 If you want to test the app first, you can donwload a compiled demo .apk from the following link: [apk]
 
 ### Configuring the app
