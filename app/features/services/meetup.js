@@ -8,9 +8,9 @@ meetupGroup.$inject = ['$http', '$q'];
 
 function meetupEvent($http, $q) {
     return {
-        getEvents: function (page) {
+        getEvents: function () {
             var dfd = $q.defer();
-            $http.get(glvar.baseUrl + 'events/' + page)
+            $http.get(glvar.baseUrl + 'events')
                 .then(function (data) {
                     dfd.resolve(data.data.results);
                 }, function (error) {
@@ -39,7 +39,7 @@ function meetupGroup($http, $q) {
             var dfd = $q.defer();
             $http.get(glvar.baseUrl + 'group')
                 .then(function (data) {
-                    dfd.resolve(data.data.results[0]);
+                    dfd.resolve(data.data);
                 }, function (error) {
                     dfd.resolve(error);
                 });

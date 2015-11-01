@@ -11,13 +11,13 @@ eventsListCtrl.$invoque = ['events', '$scope', '$state', '$filter'];
 function eventConfig($stateProvider) {
     $stateProvider
         .state('events-list', {
-            url: '/events/:page',
+            url: '/events',
             templateUrl: 'features/events-list/events-list.html',
             controller: 'eventsListCtrl',
             cache: false,
             resolve: {
-                events: function ($stateParams, muEvents) {
-                    return muEvents.getEvents($stateParams.page);
+                events: function (muEvents) {
+                    return muEvents.getEvents();
                 }
             }
         })
